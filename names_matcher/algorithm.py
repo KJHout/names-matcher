@@ -41,24 +41,7 @@ class NamesMatcher:
     nonalphanumeric_re = re.compile(r"[^A-Za-z0-9 ]+")
     whitespace_re = re.compile(r" +")
     repetitions_re = re.compile(r"(.{2,})(.*)\1+")
-    stop_words = {
-        "github": ["rebase",
-                   "rebasing",
-                   "pr",
-                   "action",
-                   "script",
-                   "release",
-                   "unknown",
-                   "root",
-                   "admin",
-                   "localhost",
-                   "refresher",
-                   "bump",
-                   "lint",
-                   "update",
-                   "and",
-                   ],
-    }
+    stop_words = { }
 
     def __init__(self,
                  stop_words: Union[str, Iterable[str]] = "github",
