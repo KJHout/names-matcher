@@ -77,7 +77,7 @@ class NamesMatcher:
     def match_parts(self,
                     parts1: Sequence[NormalizedIdentity],
                     parts2: Sequence[NormalizedIdentity],
-                    disable_progress: bool = False,
+                    disable_progress: bool = True,
                     ) -> Tuple[np.ndarray, np.ndarray]:
         """
         Match parsed, normalized, split identities. You shouldn't use this function unless you \
